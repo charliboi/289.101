@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+
+body{
+    background-color: #82ddb5;
+    background-image:  url(img/illustration.gif), url(img/texture.jpg);
+    background-position: center 280px, left top;
+    background-repeat: no-repeat, repeat-x;
+    background-size: 800px, auto;
+    margin: 0;
+    font-family: "Quicksand";
+}
+
+#nav{
+    background-color: #6B9;
+    border-bottom: 2px dashed #487;
+    color: white;
+    font-weight: bold;
+    text-align: center; 
+    word-spacing: 2em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+#logo {
+    max-width: 360px;
+    
+}
+#header{
+    text-align: center;
+    margin-top: 40px;
+    
+}
+#description, #date{
+    max-width: 220px;
+}
+.register_btn{
+    background-color: #E43;
+    border: 2px dashed #A43;
+    border-radius: 2em;
+    color: #FFF;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 25px;
+    padding: 15px 30px;
+        
+}
+#what {
+    background-color: rgba(200,240,220,0.8);
+    padding: 20px 0; /* top/bottom left/right*/
+    margin-top: 330px;
+    color: #378;
+}
+
+#what h1 {
+    max-width: 800px;
+    margin-left: auto; /*left and right to auto will centre the heading*/
+    margin-right: auto;
+}
+#what p{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#what h1 + p {
+    font-size: 1.2em;
+}
+#what h2 {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+#sponsors_logos img{
+    width: 330px;
+}
