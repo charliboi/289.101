@@ -44,6 +44,7 @@ body{
     font-weight: bold;
     margin-top: 25px;
     padding: 15px 30px;
+    
         
 }
 #what {
@@ -79,4 +80,26 @@ body{
 }
 #sponsor_logos img{
     width: 330px;
+}
+#why {
+    color: #378;
+}
+#why h1{
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: centre;
+    padding-top: 0.8em;
+    padding-bottom: 0.6em;
+}
+#why p{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+#where h1 {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: centre;
 }
