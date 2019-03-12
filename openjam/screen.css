@@ -57,6 +57,7 @@ body{
     max-width: 800px;
     margin-left: auto; /*left and right to auto will centre the heading*/
     margin-right: auto;
+    text-align: center;
 }
 #what p{
     width: 800px;
@@ -72,6 +73,10 @@ body{
     margin-right: auto;
     padding: 20px;
 }
-#sponsors_logos img{
+
+#what #sponsor_logos {
+    text-align: center;
+}
+#sponsor_logos img{
     width: 330px;
 }
