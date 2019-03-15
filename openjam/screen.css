@@ -127,8 +127,9 @@ body{
 #when{
     color: white;
     text-align: center;
-    background-image: url(img/texture.jpg), url(img/wires.png);
+    background-image: url(img/wires.png);
     padding-top: 10px;
+    
 }
 #when h2 {
     border-bottom: 1.5px dashed white;
@@ -151,6 +152,7 @@ body{
     background: white;
     text-align: center;
     padding-bottom: 2em;
+    border-top: 0.8em solid white;
     
     
 }
