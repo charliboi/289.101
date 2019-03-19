@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Layout 1</title>
+    
+    <style>
+        /*help visualise the divs*/
+        div{
+            outline: 1px solid black;
+        }
+        #container{
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid; /*this allows us to set up the boxes and manuva*/
+            grid-template-columns: 1fr 1fr 1fr 1fr;/*put width of each colum. can tx as 2 column or 4 column layout (eg 3 green columns). could use 200px or 25*/
+        }
+        #blue {
+            height: 200px;
+            background-color: blue;
+            grid-column: 1/5 /*from line 1 to line 5 - each column consists of 2 lines!*/
+        }
+        #red {
+            height: 600px;
+            background-color: red;
+        }
+        #green {
+            height: 600px;
+            background-color: lime;
+            grid-column: 2/5; /*from line 2 to line 5*/
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="container">
+            <div id="blue"></div>
+            <div id="red"></div>
+            <div id="green"></div>
+    </div>
+</body>
+
+</html>

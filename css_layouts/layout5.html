@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Layout 5</title>
+    
+    <style>
+        
+        div{
+            outline: 1px solid black;
+        }
+        #container {
+            width: 800px;
+            margin: auto;
+            display: grid;
+            background-color: red;
+            grid-template-columns: 1fr 1fr 1fr;/*3 proportional columns*/
+            
+        }
+        #blue {
+            background-color: blue;
+            height: 200px;
+            grid-column: 1/4;
+            padding: auto;
+        }
+        .yellow1 {
+            background-color: yellow;
+            border: 1px solid black;
+            height: 150px;
+            width: 150px;
+        }
+        #red {
+            height: 400px;
+            background-color: red;
+            grid-column: 
+            
+        }
+        #green {
+            background-color: lime;
+            grid-column: 1/4;
+            height: 200px;
+            
+        }
+               
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="blue">
+            <div class="yellow1">ddd</div>
+        </div>
+        <div id="red"></div>
+        <div id="green"></div>
+    </div>
+</body>
+
+</html>
