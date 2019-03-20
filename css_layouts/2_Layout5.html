@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Layout05</title>
+    
+    <style>
+        div{
+            outline: 1px solid black;
+        }
+        #container{
+            width: 800px;
+            margin: auto;
+            
+        }
+        #blue{
+            background-color: blue;
+            height: 200px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            display: grid;
+            padding: 20px;   
+        }
+        .yellow1{
+            background-color: yellow;
+            height: 160px;
+            width: 160px;
+            grid-column: 4/5;
+            margin: 20px;     
+        }
+        #red-container{
+            background-color: red;
+            height: 400px;
+            grid-template-columns: 33% 67%;
+            display: grid;
+        }
+        #red-column-left{
+            background-color: red;
+            
+        }
+        #red-column-right{
+            background-color: red;
+            height: 360px;  
+            grid-template-columns: 33% 67%;
+            display: grid;
+            outline: 1px solid black;
+            padding: 20px;
+        }
+        .yellowsml{
+            background-color: yellow;
+            height: 100px;
+            margin: 20px;
+        }
+        .yellowlg{
+            background-color: yellow;
+            height: 320px;
+            margin: 20px;
+        }
+        #green{
+            background-color: lime;
+            height: 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="blue">
+            <div class="yellow1"></div>
+        </div>
+        <div id="red-container">
+            <div id="red-column-left"></div>
+            <div id="red-column-right">
+                <div class="yellowsml"></div>
+                <div class="yellowlg"></div>
+            </div>
+        </div>
+        <div id="green"></div>
+    </div>
+    
+</body>
+
+
+</html>
