@@ -5,8 +5,7 @@ body {
     margin: 0;
     font-family: 'Lato', sans-serif;/*if google fonts crash, will roll back to a default sans serif font*/
 }
-* {
-    outline: 1px solid lime;
+
 }
 #header {
     background-color: #2d303a;
