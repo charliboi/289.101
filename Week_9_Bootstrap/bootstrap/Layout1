@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title> Bootstrap</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/> <!--MUST HAVE THIS LINE FOR RESPONSIVE DESIGN -->
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <!--link to custom styles sheet must follow style sheets to override -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"><!--allows us to use fontawesom-->
+        <style>
+            *{outline: #CCC solid 1px}
+            
+        
+        </style>
+        
+    </head>
+
+    <body>
+        <div class="container">  <!--when using divs fisrt div ALWAYS needs to be a container. container-fluid would cause the row class to touch the sides-->
+            <div class="row"> <!--row class restricts width-->
+                <!--start making columns within the row. this splits into 3 columns because it is based on 12!!!! eg a col4 will take up a third, col6 will take up half the spae. col-sm-4 means that for all sreens small and above will have  something something. col-md-4 is all screens medium size and above, col-lg-4 all large screens and above, col-xl-4. col4 actually means xs-->
+                <!-- to remove padding esp for adding images use "no-gutters" class-->
+                <div class="col-sm-4"> 4 </div>
+                <div class="col-sm-4"> 4 </div>
+                <div class="col-sm-4"> 4 </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12 col-sm-8"> 12 </div><!--when screen xs div spans whole row. when moves to bigger size sm it changes to 8 = 3/4 of the row-->
+                <div class="col-6 col-sm-2"> 6/2 </div>
+                <div class="col-6 col-sm-2"> 6/2 </div>
+            </div>
+            
+            
+        </div>
+        
+        <h1>Fontawesome</h1>
+        <i class="far fa-envelope"></i> email@gmail.com <!--using font awesom-->
+        
+        <h1>Collapsibles</h1>   <!--setting up our big question and reveal-->
+        How many days are there in a year?
+        <button data-toggle="collapse" data-target="#answer"> show the answer</button>
+        
+        <div id="answer" class="collapse"> <!--putting the answer into a collapsable div-->
+            365.2422
+        </div>
+        
+    </body>
+
+
+
+
+
+</html>
