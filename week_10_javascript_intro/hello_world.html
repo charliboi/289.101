@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<htm>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Hello World Example</title>
+    
+    <style>
+        #red{
+            background-color: red;
+        }
+        #blue{
+            background-color: blue
+        }
+    
+    </style>
+    
+</head>
+
+<body>
+    
+    <h1>My First JavaScript File</h1>
+    
+    <div id="red">
+        red
+    </div>
+    
+    <div id="blue">
+        blue
+    </div>
+    
+    <button id="btn">make the red div green</button><!--can be any element. button just easy-->
+    
+    <script>
+        //document refers to the !DOC tag. could dig down from this, or..
+        //search for an element in the DOC 'trunk' using get Element
+        //var reddiv = document.getElementById('red');
+        //reddiv.style.backgroundColor = '#00FF00';
+        
+        //'click' is event that computer is 'listening' for. this listener is being added to button
+        document.getElementById('btn').addEventListener('click', function(){
+            var reddiv = document.getElementById('red');
+            reddiv.style.backgroundColor = '#00FF00';                                          });
+        
+       // alert('Hello world');//can use single or double quotes
+        console.log('Hello world');//goes to browser development tab. debugging.
+        document.write('<h1>Hello world</h1>');//treated as html, so html tags work
+        
+        var x = 2
+        console.log(x);//shows 2 in the console tab of browser
+        
+        var firstname = 'John';
+        var lastname = 'Smith';
+        console.log(firstname + ' ' +lastname);
+        
+        
+    </script>
+    
+    
+</body>
+
+</htm>
