@@ -57,11 +57,11 @@
         <a id="eyes_hollow_btn">hollow eyes</a>
         <a id="eyes_solid_btn">solid eyes</a>
         <a id="no_eye_right_btn">no right eye</a>
-        <a>move mouth up</a>
-        <a>move mouth down</a>
-        <a>happy mouth</a>
-        <a>sad mouth</a>
-        <a>reset face</a>
+        <a id="mouth_up_btn">move mouth up</a>
+        <a id="mouth_down_btn">move mouth down</a>
+        <a id="mouth_happy_btn">happy mouth</a>
+        <a id="mouth_sad_btn">sad mouth</a>
+        <a id="reset_btn">reset face</a>
     </div>
 
     <div id="face">
@@ -130,10 +130,30 @@
             document.getElementById('eye_left').src="eye_solid.svg";
             document.getElementById('eye_right').style.display = 'none';
         });
-        // right eye event listener
-        document.getElementById('no_eye_right_btn').addEventListener('click', function() {
-            document.getElementById('eye_left').src="eye_solid.svg";
-            document.getElementById('eye_right').style.display = 'none';
+        // mouth up event listener
+        document.getElementById('mouth_up_btn').addEventListener('click', function() {
+            document.getElementById('mouth').style.top = mouth_y + 'px';
+            mouth_y -= 10;
+        });
+        // mouth down event listener
+        document.getElementById('mouth_down_btn').addEventListener('click', function() {
+            document.getElementById('mouth').style.top = mouth_y + 'px';
+            mouth_y += 10;
+        });
+        // happy mouth event listener
+        document.getElementById('mouth_happy_btn').addEventListener('click', function() {
+            document.getElementById('mouth').src="mouth_happy.svg";    
+        });
+        // sad mouth event listener
+        document.getElementById('mouth_sad_btn').addEventListener('click', function() {
+            document.getElementById('mouth').src="mouth_sad.svg";    
+        });
+        // refresh face event listener
+        document.getElementById('reset_btn').addEventListener('click', function(){
+            document.getElementById('eye_left').style.left = eye_left_x + 'px'
+              eye_left_x = 100;
+            document.getElementById('eye_left').style.left = eye_left_y + 'px'
+              eye_left_y = 100;    
         });
     </script>
 
