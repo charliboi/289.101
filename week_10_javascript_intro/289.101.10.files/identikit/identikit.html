@@ -150,10 +150,19 @@
         });
         // refresh face event listener
         document.getElementById('reset_btn').addEventListener('click', function(){
-            document.getElementById('eye_left').style.left = eye_left_x + 'px'
-              eye_left_x = 100;
-            document.getElementById('eye_left').style.left = eye_left_y + 'px'
-              eye_left_y = 100;    
+            eye_left_x = 100;
+            document.getElementById('eye_left').style.left = eye_left_x + 'px';
+            eye_left_y = 100;
+            document.getElementById('eye_left').style.top = eye_left_y + 'px';
+            eye_right_x = 250;
+            document.getElementById('eye_right').style.left = eye_right_x + 'px';
+            eye_right_y = 100;
+            document.getElementById('eye_right').style.top = eye_right_y + 'px';
+            mouth_x = 100;
+            document.getElementById('mouth').style.left = mouth_x + 'px';
+            mouth_y = 250;
+            document.getElementById('mouth').style.top = mouth_y + 'px';
+   
         });
     </script>
 
